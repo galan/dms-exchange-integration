@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>de.galan</groupId>
+	<artifactId>dms-exchange-doctape</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>dms-exchange-integration</name>
+	<description>Very very alpha, don't look here ;)</description>
+
+	<parent>
+		<groupId>de.galan</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.5</version>
+	</parent>
+
+	<scm>
+		<developerConnection>scm:git:ssh://git@github.com/galan/....git</developerConnection>
+		<url>https://github.com/galan/...</url>
+	</scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>de.galan</groupId>
+			<artifactId>dms-exchange-java</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>de.galan</groupId>
+			<artifactId>flux</artifactId>
+			<version>0.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.fge</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>2.2.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.oltu.oauth2</groupId>
+			<artifactId>org.apache.oltu.oauth2.client</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+		</dependency>
+
+		<!-- organize.me -->
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<!-- <version>1.4.8</version> -->
+		</dependency>
+
+		<!-- tests -->
+		<dependency>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-simple-http</artifactId>
+			<version>2.12</version>
+		</dependency>
+
+	</dependencies>
+
+</project>

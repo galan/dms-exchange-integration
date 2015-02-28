@@ -1,0 +1,29 @@
+package de.galan.dmsexchange.tool.provider.centerdevice;
+
+import de.galan.dmsexchange.tool.provider.DmsProvider;
+
+
+/**
+ * CenterDevice sample implementation
+ *
+ * @author daniel
+ */
+public class CenterDeviceDmsProvider implements DmsProvider {
+
+	protected String getBaseUrl() {
+		return "https://api.centerdevice.de/v2";
+	}
+
+
+	@Override
+	public void exportArchive() {
+
+	}
+
+
+	@Override
+	public void importArchive() {
+
+	}
+
+}
