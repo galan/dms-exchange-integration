@@ -37,7 +37,7 @@ public class OrganizemeDmsProvider implements DmsProvider {
 	@Override
 	public void exportArchive() {
 		// Parameter
-		File file = new File("/home/daniel/Dropbox/dev/projects/dms/dms-exchange-doctape/instance/storage/organizeme-e6e6591e-3d4a-4d73-ab61-bb566950b6d5.zip");
+		File file = new File("/home/daniel/Dropbox/dev/git/dms-exchange-integration/instance/storage/organizeme-e6e6591e-3d4a-4d73-ab61-bb566950b6d5.zip");
 		File target = new File(getTestDirectory(true), "export-archive.tgz");
 
 		try {
@@ -72,17 +72,12 @@ public class OrganizemeDmsProvider implements DmsProvider {
 	protected Document convertDocument(ZipFile zipfile, OmDocument omdoc) throws IOException {
 		ZipEntry entry = zipfile.getEntry(omdoc.getFile());
 		InputStream stream = zipfile.getInputStream(entry);
-		Document doc = new Document();
+
+		Document doc = new Document().source(SOURCE);
 		DocumentFile docfile = new DocumentFile(omdoc.getTitle());
-		Revision revision = new Revision(omdoc.getCreatedTime());
-		revision.setData(stream);
-		docfile.addRevision(revision);
+		docfile.addRevision(new Revision(omdoc.getCreatedTime()).data(stream));
 		doc.addDocumentFile(docfile);
-		doc.addLabels(omdoc.getTagsArray());
-		doc.setNote(omdoc.getNotes());
-		doc.setIdSystem(omdoc.getUuid());
-		doc.setProject(omdoc.getCategory());
-		doc.setSource(SOURCE);
+		doc.labels(omdoc.getTagsArray()).note(omdoc.getNotes()).idSystem(omdoc.getUuid()).project(omdoc.getCategory());
 		return doc;
 	}
 
