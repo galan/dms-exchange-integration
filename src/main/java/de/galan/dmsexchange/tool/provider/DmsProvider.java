@@ -7,9 +7,9 @@ package de.galan.dmsexchange.tool.provider;
  */
 public interface DmsProvider {
 
-	public void exportArchive();
+	public void exportArchive(); // Map<String,String> parameter, throws Exception
 
 
-	public void importArchive();
+	public void importArchive(); // Map<String,String> parameter, throws Exception
 
 }
