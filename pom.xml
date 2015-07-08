@@ -5,12 +5,12 @@
 	<artifactId>dms-exchange-doctape</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dms-exchange-integration</name>
-	<description>Very very alpha, don't look here ;)</description>
+	<description>Just for testing integrations of dm providers, nothing big here currently</description>
 
 	<parent>
 		<groupId>de.galan</groupId>
 		<artifactId>parent</artifactId>
-		<version>0.5</version>
+		<version>0.9.1</version>
 	</parent>
 
 	<scm>
@@ -22,12 +22,17 @@
 		<dependency>
 			<groupId>de.galan</groupId>
 			<artifactId>dms-exchange-java</artifactId>
-			<version>1.0.1</version>
+			<version>1.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>de.galan</groupId>
 			<artifactId>flux</artifactId>
-			<version>0.4</version>
+			<version>0.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>de.galan</groupId>
+			<artifactId>commons</artifactId>
+			<version>0.9.2</version>
 		</dependency>
 
 		<dependency>
@@ -50,13 +55,14 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.12</version>
 		</dependency>
 
 		<!-- organize.me -->
 		<dependency>
 			<groupId>com.thoughtworks.xstream</groupId>
 			<artifactId>xstream</artifactId>
-			<!-- <version>1.4.8</version> -->
+			<version>1.4.8</version>
 		</dependency>
 
 		<!-- tests -->

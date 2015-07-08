@@ -13,7 +13,7 @@ import org.glassfish.jersey.simple.SimpleContainerFactory;
 import org.glassfish.jersey.simple.SimpleServer;
 import org.slf4j.Logger;
 
-import de.galan.commons.logging.Logr;
+import de.galan.commons.logging.Slogr;
 import de.galan.flux.Flux;
 
 
@@ -24,7 +24,7 @@ import de.galan.flux.Flux;
  */
 public class DoctapeExport {
 
-	private static final Logger LOG = Logr.get();
+	private static final Logger LOG = Slogr.get();
 
 
 	public static void main(String[] args) {

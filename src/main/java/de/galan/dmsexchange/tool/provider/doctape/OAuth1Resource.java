@@ -11,7 +11,7 @@ import org.slf4j.Logger;
 import com.google.common.base.Charsets;
 import com.google.common.io.Resources;
 
-import de.galan.commons.logging.Logr;
+import de.galan.commons.logging.Slogr;
 
 
 /**
@@ -23,7 +23,7 @@ import de.galan.commons.logging.Logr;
 @Path("/dms-exchange/auth")
 public class OAuth1Resource {
 
-	private static final Logger LOG = Logr.get();
+	private static final Logger LOG = Slogr.get();
 
 
 	@GET

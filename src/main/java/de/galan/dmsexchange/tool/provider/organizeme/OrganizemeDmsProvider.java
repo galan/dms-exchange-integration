@@ -13,7 +13,7 @@ import org.slf4j.Logger;
 
 import com.thoughtworks.xstream.XStream;
 
-import de.galan.commons.logging.Logr;
+import de.galan.commons.logging.Slogr;
 import de.galan.dmsexchange.DmsExchange;
 import de.galan.dmsexchange.exchange.DmsWriter;
 import de.galan.dmsexchange.meta.Document;
@@ -30,7 +30,7 @@ import de.galan.dmsexchange.tool.provider.DmsProvider;
  */
 public class OrganizemeDmsProvider implements DmsProvider {
 
-	private static final Logger LOG = Logr.get();
+	private static final Logger LOG = Slogr.get();
 	private static final Source SOURCE = new Source("organize.me GmbH", null, "https://www.organize.me", "feedback@organize.me");
 
 

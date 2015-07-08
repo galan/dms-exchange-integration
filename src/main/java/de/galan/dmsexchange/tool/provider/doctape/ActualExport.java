@@ -5,7 +5,7 @@ import org.slf4j.Logger;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import de.galan.commons.logging.Logr;
+import de.galan.commons.logging.Slogr;
 import de.galan.commons.util.JvmUtils;
 import de.galan.flux.Flux;
 import de.galan.flux.Response;
@@ -18,7 +18,7 @@ import de.galan.flux.Response;
  */
 public class ActualExport {
 
-	private static final Logger LOG = Logr.get();
+	private static final Logger LOG = Slogr.get();
 
 
 	public void export(String accessToken) {

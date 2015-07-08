@@ -9,7 +9,7 @@ import org.apache.oltu.oauth2.client.request.OAuthClientRequest;
 import org.apache.oltu.oauth2.common.message.types.GrantType;
 import org.slf4j.Logger;
 
-import de.galan.commons.logging.Logr;
+import de.galan.commons.logging.Slogr;
 
 
 /**
@@ -20,7 +20,7 @@ import de.galan.commons.logging.Logr;
 @Path("/dms-exchange")
 public class StatusResource {
 
-	private static final Logger LOG = Logr.get();
+	private static final Logger LOG = Slogr.get();
 
 
 	@GET
