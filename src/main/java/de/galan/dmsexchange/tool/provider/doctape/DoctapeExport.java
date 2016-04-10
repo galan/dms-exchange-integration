@@ -48,7 +48,8 @@ public class DoctapeExport {
 		}
 		else {
 			String url = Flux.request("https://my.doctape.com/oauth2").param("scope", "account.read file.read").param("response_type", "token").param(
-				"redirect_uri", "http://localhost:8765/dms-exchange/auth").param("state", "anystate").param("client_id", "0006a3e9-7b7f-454d-93f9-f5a80648e535").toUrlString();
+				"redirect_uri", "http://localhost:8765/dms-exchange/auth").param("state", "anystate").param("client_id",
+					"0006a3e9-7b7f-454d-93f9-f5a80648e535").toUrlString();
 			LOG.info("Calling {}", url);
 			openWebpage(url);
 		}
@@ -69,7 +70,7 @@ public class DoctapeExport {
 				desktop.browse(URI.create(uri));
 			}
 			catch (Exception e) {
-				e.printStackTrace();
+				//e . print StackTrace();
 			}
 		}
 	}
