@@ -1,5 +1,7 @@
 package de.galan.dmsexchange.tool.provider.doctape;
 
+import static java.nio.charset.StandardCharsets.*;
+
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +16,7 @@ import org.glassfish.jersey.simple.SimpleServer;
 import org.slf4j.Logger;
 
 import de.galan.commons.logging.Slogr;
-import de.galan.flux.Flux;
+import de.galan.commons.net.flux.Flux;
 
 
 /**
@@ -43,7 +45,7 @@ public class DoctapeExport {
 		// Check existing accesstoken
 		File file = new File("access-token");
 		if (file.exists()) {
-			String accessToken = FileUtils.readFileToString(file);
+			String accessToken = FileUtils.readFileToString(file, UTF_8);
 			new ActualExport().export(accessToken);
 		}
 		else {

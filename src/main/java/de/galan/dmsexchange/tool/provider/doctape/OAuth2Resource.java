@@ -1,5 +1,6 @@
 package de.galan.dmsexchange.tool.provider.doctape;
 
+import static java.nio.charset.StandardCharsets.*;
 import static org.apache.commons.lang3.StringUtils.*;
 
 import java.io.File;
@@ -14,8 +15,6 @@ import javax.ws.rs.core.UriInfo;
 
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
-
-import com.google.common.base.Charsets;
 
 import de.galan.commons.logging.Slogr;
 
@@ -40,7 +39,7 @@ public class OAuth2Resource {
 			// store for later calls
 			File file = new File("access-token");
 			file.getParentFile().mkdirs();
-			FileUtils.write(file, accessToken, Charsets.UTF_8);
+			FileUtils.write(file, accessToken, UTF_8);
 		}
 
 		new ActualExport().export(accessToken);

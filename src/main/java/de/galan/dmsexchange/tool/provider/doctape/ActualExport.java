@@ -6,9 +6,9 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import de.galan.commons.logging.Slogr;
-import de.galan.commons.util.JvmUtils;
-import de.galan.flux.Flux;
-import de.galan.flux.Response;
+import de.galan.commons.net.flux.Flux;
+import de.galan.commons.net.flux.Response;
+import de.galan.commons.util.JvmUtil;
 
 
 /**
@@ -29,7 +29,7 @@ public class ActualExport {
 			// OAuthProblemException{error='invalid_request', description='Missing parameters: access_token', uri='null', state='null', scope='null', redirectUri='null', responseStatus=0, parameters={}}
 			LOG.warn("meep");
 		}
-		JvmUtils.terminate().message("Finished export").now();
+		JvmUtil.terminate().message("Finished export").now();
 	}
 
 

@@ -1,17 +1,14 @@
 package de.galan.dmsexchange.tool.provider.doctape;
 
+import static java.nio.charset.StandardCharsets.*;
+
 import java.io.IOException;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
-import org.slf4j.Logger;
-
-import com.google.common.base.Charsets;
 import com.google.common.io.Resources;
-
-import de.galan.commons.logging.Slogr;
 
 
 /**
@@ -23,14 +20,11 @@ import de.galan.commons.logging.Slogr;
 @Path("/dms-exchange/auth")
 public class OAuth1Resource {
 
-	private static final Logger LOG = Slogr.get();
-
-
 	@GET
 	@Produces("text/html")
 	public String getUser() {
 		try {
-			return Resources.toString(Resources.getResource(getClass(), "redirect.html"), Charsets.UTF_8);
+			return Resources.toString(Resources.getResource(getClass(), "redirect.html"), UTF_8);
 		}
 		catch (IOException ex) {
 			return null;
