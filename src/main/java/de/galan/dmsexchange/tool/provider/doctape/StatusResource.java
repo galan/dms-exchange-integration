@@ -14,8 +14,6 @@ import de.galan.commons.logging.Slogr;
 
 /**
  * daniel should have written a comment here.
- *
- * @author daniel
  */
 @Path("/dms-exchange")
 public class StatusResource {

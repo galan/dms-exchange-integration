@@ -25,8 +25,6 @@ import de.galan.dmsexchange.tool.provider.DmsProvider;
 
 /**
  * Converts the proprietary format provided by organize.me to dms-exchange
- *
- * @author daniel
  */
 public class OrganizemeDmsProvider implements DmsProvider {
 

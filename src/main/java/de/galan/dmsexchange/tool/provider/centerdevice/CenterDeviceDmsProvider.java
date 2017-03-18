@@ -5,8 +5,6 @@ import de.galan.dmsexchange.tool.provider.DmsProvider;
 
 /**
  * CenterDevice sample implementation
- *
- * @author daniel
  */
 public class CenterDeviceDmsProvider implements DmsProvider {
 

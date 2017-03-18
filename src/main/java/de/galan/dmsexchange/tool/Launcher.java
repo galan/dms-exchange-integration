@@ -6,8 +6,6 @@ import de.galan.dmsexchange.tool.provider.organizeme.OrganizemeDmsProvider;
 
 /**
  * Very early alpha, don't look here ;)
- *
- * @author daniel
  */
 public class Launcher {
 

@@ -2,8 +2,6 @@ package de.galan.dmsexchange.tool.provider.doctape;
 
 /**
  * daniel should have written a comment here.
- *
- * @author daniel
  */
 public class DoctapeExportException extends Exception {
 

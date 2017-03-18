@@ -5,8 +5,6 @@ import java.util.List;
 
 /**
  * Represents the &gt;documents&lt; in the proprietary organize.me format.
- *
- * @author daniel
  */
 public class OmDocuments {
 

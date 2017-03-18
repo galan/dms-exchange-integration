@@ -11,8 +11,6 @@ import com.google.common.collect.Iterables;
 
 /**
  * Represents the &gt;document&lt; in the proprietary organize.me format.
- *
- * @author daniel
  */
 public class OmDocument {
 

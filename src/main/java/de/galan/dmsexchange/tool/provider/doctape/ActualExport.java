@@ -13,8 +13,6 @@ import de.galan.commons.util.JvmUtil;
 
 /**
  * daniel should have written a comment here.
- *
- * @author daniel
  */
 public class ActualExport {
 

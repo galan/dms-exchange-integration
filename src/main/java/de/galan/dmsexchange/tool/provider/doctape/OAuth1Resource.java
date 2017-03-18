@@ -14,8 +14,6 @@ import com.google.common.io.Resources;
 /**
  * Takes the first response and redirects to a second resource with the parameter put as query parameters instead of
  * fragments.
- *
- * @author daniel
  */
 @Path("/dms-exchange/auth")
 public class OAuth1Resource {
